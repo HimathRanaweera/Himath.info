@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+body{
+    height: 100%;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar{
+    left: 30%;
+    
+}
+
+.navbar a{
+font-size: 18px;
+color: whitesmoke;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+text-shadow: 2px 1px 2px black;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+header {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+.about,
+.projects,
+.contact {
+    max-width: 800px;
+    margin: 20px auto;
+    
+}
+
+.project01 img {
+    max-width: 100%;
+    height: auto;
+}
+.project02 img {
+    max-width: 100%;
+    height: auto;
+}
+.projects{
+    flex: 1;
+    overflow: hidden;
+
+}
+.project01 h3{
+    color: #000000;
+}
+.project01 p{
+    color: #000000;
+}
+.project01 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+
+}
+.project01:hover img{
+    transform: scale(1.2);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.project02 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+
+}
+.project02 h3{
+    color: #000000;
+}
+.project02 p{
+    color: #000000;
+}
+.project02:hover img{
+    transform: scale(1.2);
+}
+.project02 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+
+}
+.project02:hover img{
+    transform: scale(1.2);
+}
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes showRight{
+    100%{
+        width: 0;
+        
+    }
+}

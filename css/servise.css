@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar{
+    left: 30%;
+    
+}
+
+.navbar a{
+font-size: 18px;
+color: whitesmoke;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+text-shadow: 2px 1px 2px black;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card01 {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card01:hover {
+    transform: scale(1.05);
+}
+
+.service-card01 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card02 {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card02:hover {
+    transform: scale(1.05);
+}
+
+.service-card02 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card03 {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card03:hover {
+    transform: scale(1.05);
+}
+
+.service-card03 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.services01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card04 {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card04:hover {
+    transform: scale(1.05);
+}
+
+.service-card04 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.services01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card05 {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card05:hover {
+    transform: scale(1.05);
+}
+
+.service-card05 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+
+
+
+@keyframes showRight{
+    100%{
+        width: 0;
+        
+    }
+}

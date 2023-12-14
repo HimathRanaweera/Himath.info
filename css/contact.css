@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/img/vivid-blurred-colorful-wallpaper-background.jpg);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar{
+    left: 30%;
+    
+}
+
+.navbar a{
+font-size: 18px;
+color: whitesmoke;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+text-shadow: 2px 1px 2px black;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+
+
+
+header {
+    /* color: #fff;
+    text-align: center;
+    padding: 20px; */
+    position: fixed;
+    top: 80px;
+    left: 850px;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 60;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+header {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    color: #00abf0;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+
+
+button{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer
+    
+
+}
+button:hover{
+    color: #00abf0;
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+button:hover::before{
+    width: 100%;
+}
+
+
+@keyframes showRight{
+    100%{
+        width: 0;
+        
+    }
+}
